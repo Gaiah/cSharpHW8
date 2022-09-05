@@ -4,16 +4,16 @@
 
 void ThreeDimensArray (int[,,] cube)
 {
-    int num = 10;
+    int num = 1;
     for (int k = 0; k < cube.GetLength(0); k++)
     {
-        num += 5;
+        num += 2;
         for (int j = 0; j < cube.GetLength(1); j++)
         {
             num += 3;
             for (int i = 0; i < cube.GetLength(2); i++)
             {   
-                num += 9;
+                num += 5;
                 cube[k, i, j] = num;     
                 System.Console.Write($"{k}, {i}, {j} - {cube[k, i, j]}\t");                 
             }
