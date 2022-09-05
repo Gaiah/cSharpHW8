@@ -24,7 +24,7 @@ void ArrangeMatrix (int[,] matr1)
             int minPos = col;
             for (int j = col + 1; j < matr1.GetLength(1); j++)
             {
-                if (matr1[str, j] < matr1[str, minPos])
+                if (matr1[str, j] > matr1[str, minPos])
                 {
                     minPos = j;
                 }
